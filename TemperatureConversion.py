@@ -8,4 +8,9 @@ def to_fahrenheit(celsius):
 
 # the main function is used to test the other functions
 
+if __name__ == "__main__":
+    for temp in range(0, 212, 40):
+        print(temp, "Fahrenheit =", round(to_celsius(temp), 2), "Celsius")
 
+    for temp in range(0, 100, 20):
+        print(temp, "Celsius =", round(to_fahrenheit(temp), 2), "Fahrenheit")
